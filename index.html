@@ -1,10 +1,161 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>OfficeTrip</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OfficeTrip — Publishing & IP Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="OfficeTrip — journal publishing, patent filing, design registration, book chapters, project support and research services.">
+<style>
+  :root{
+    --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#475569;
+    --primary:#0f766e; --accent:#f59e0b; --radius:14px;
+    --max:1100px;
+  }
+  *{box-sizing:border-box}
+  body{font-family:Inter,system-ui,Arial; margin:0; background:var(--bg); color:var(--text); line-height:1.5}
+  .wrap{max-width:var(--max); margin:28px auto; padding:28px}
+  header{display:flex;align-items:center;justify-content:space-between; gap:16px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#066b63);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+  nav{display:flex;gap:18px;align-items:center}
+  nav a{color:var(--muted);text-decoration:none;font-weight:600}
+  .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:36px}
+  .card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 20px rgba(15,23,42,0.06);padding:28px}
+  h1{font-size:34px;margin:0 0 12px}
+  p.lead{color:var(--muted);margin:0 0 20px}
+  .cta{display:inline-block;background:var(--primary);color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+  .secondary{background:transparent;border:2px solid #e6eef0;color:var(--text);padding:10px 14px;border-radius:10px;text-decoration:none}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+  .service{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfeff);border:1px solid #eef6f5}
+  .service h3{margin:0 0 8px;font-size:16px}
+  .how{display:flex;gap:12px;margin-top:24px}
+  .step{flex:1;padding:16px;border-radius:12px;background:var(--card);text-align:center}
+  .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  .portfolio .item{background:var(--card);padding:14px;border-radius:12px}
+  footer{margin-top:40px;padding:24px;border-radius:12px;background:linear-gradient(180deg,#fff,#f6fbfb);display:flex;justify-content:space-between;align-items:center}
+  .contact-form input,.contact-form textarea{width:100%;padding:10px;border:1px solid #e6eef0;border-radius:8px;margin-bottom:10px;font-family:inherit}
+  .muted{color:var(--muted);font-size:14px}
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr; }
+    .services,.portfolio{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:540px){
+    .services,.portfolio{grid-template-columns:1fr}
+    header{flex-direction:column;align-items:flex-start;gap:10px}
+    footer{flex-direction:column;gap:12px;align-items:flex-start}
+  }
+</style>
 </head>
 <body>
-  <h1>Welcome to OfficeTrip</h1>
-  <p>Website powered by GitHub Pages</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">OT</div>
+        <div>
+          <div style="font-weight:700">OfficeTrip</div>
+          <div style="font-size:12px;color:var(--muted)">Publishing · IP · Research Support</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#how">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Professional Publishing & IP Services</h1>
+          <p class="lead">Journal publishing, patent filing, design registration, book chapters and project support — end-to-end assistance for researchers and startups.</p>
+          <a class="cta" href="#contact">Get a Free Consultation</a>
+          <a class="secondary" href="#services" style="margin-left:12px">Our Services</a>
+
+          <div class="services" id="services" style="margin-top:20px">
+            <div class="service">
+              <h3>Journal Publishing</h3>
+              <div class="muted">Manuscript editing, journal submission, indexing & DOI assistance.</div>
+            </div>
+            <div class="service">
+              <h3>Patent Filing</h3>
+              <div class="muted">Drafting, filing & prosecution support for patents (IN/Intl).</div>
+            </div>
+            <div class="service">
+              <h3>Design Registration</h3>
+              <div class="muted">Industrial designs and IP protection with expert drafting.</div>
+            </div>
+            <div class="service">
+              <h3>Book Chapters</h3>
+              <div class="muted">Publication planning & chapter submission services.</div>
+            </div>
+            <div class="service">
+              <h3>Project Support</h3>
+              <div class="muted">Final year projects, research guidance, code & report support.</div>
+            </div>
+            <div class="service">
+              <h3>Patent & Paper Packages</h3>
+              <div class="muted">Combined packages for paper+patent+publication.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick contact card -->
+      <aside class="card" style="height:100%;">
+        <h3 style="margin-top:0">Start your project</h3>
+        <div class="muted">Request a callback or send your details. We’ll respond within 24 hours.</div>
+        <form id="contact" class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" style="margin-top:12px">
+          <input name="name" placeholder="Full name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <input name="phone" placeholder="Phone (optional)">
+          <textarea name="message" rows="5" placeholder="Brief message (service/paper/patent)"></textarea>
+          <button type="submit" class="cta" style="width:100%">Send Request</button>
+        </form>
+      </aside>
+    </section>
+
+    <section style="margin-top:30px">
+      <h2 style="margin:0 0 10px">How it works</h2>
+      <div class="how">
+        <div class="step">
+          <strong>1. Free Consultation</strong>
+          <div class="muted">Tell us about your research or idea.</div>
+        </div>
+        <div class="step">
+          <strong>2. Proposal & Quote</strong>
+          <div class="muted">Transparent pricing and timelines.</div>
+        </div>
+        <div class="step">
+          <strong>3. Execution</strong>
+          <div class="muted">We handle drafting, submission & follow-up.</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:28px">
+      <h2 style="margin:0 0 10px">Selected Publications & Projects</h2>
+      <div class="portfolio" id="portfolio">
+        <div class="item"><strong>Research paper — AI-based energy monitoring</strong><div class="muted">Scopus journal · 2024</div></div>
+        <div class="item"><strong>Patent — Smart sensor mount</strong><div class="muted">Filed · IN2025xxxx</div></div>
+        <div class="item"><strong>Book chapter — IoT in Smart Cities</strong><div class="muted">Publisher · 2023</div></div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <div style="font-weight:700">OfficeTrip</div>
+        <div class="muted" style="max-width:460px">We provide end-to-end academic & IP services for researchers, startups and institutions. For bulk/project work, request a dedicated quote.</div>
+      </div>
+      <div style="text-align:right">
+        <div class="muted">Email: <a href="mailto:info@trip.linkpc.net">info@trip.linkpc.net</a></div>
+        <div style="margin-top:8px">
+          <a href="#contact" class="secondary" style="padding:8px 12px">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
