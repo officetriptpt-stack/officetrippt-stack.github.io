@@ -105,19 +105,25 @@
 
       <!-- Quick contact card -->
       <aside class="card" style="height:100%;">
-        <h3 style="margin-top:0">Start your project</h3>
+        <h3 style="margin-top:0" id="contact">Start your project</h3>
         <div class="muted">Request a callback or send your details. We’ll respond within 24 hours.</div>
-        <form id="contact" class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" style="margin-top:12px">
+
+        <!-- SINGLE, CORRECT FORMSPREE FORM -->
+        <form class="contact-form" action="https://formspree.io/f/xeoyrzdq" method="POST" style="margin-top:12px">
           <input name="name" placeholder="Full name" required>
           <input name="email" type="email" placeholder="Email" required>
           <input name="phone" placeholder="Phone (optional)">
-          <textarea name="message" rows="5" placeholder="Brief message (service/paper/patent)"></textarea>
+          <textarea name="message" rows="5" placeholder="Brief message (service/paper/patent)" required></textarea>
+
+          <!-- optional: disable captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
           <button type="submit" class="cta" style="width:100%">Send Request</button>
         </form>
       </aside>
     </section>
 
-    <section style="margin-top:30px">
+    <section style="margin-top:30px" id="how">
       <h2 style="margin:0 0 10px">How it works</h2>
       <div class="how">
         <div class="step">
@@ -136,8 +142,8 @@
     </section>
 
     <section style="margin-top:28px">
-      <h2 style="margin:0 0 10px">Selected Publications & Projects</h2>
-      <div class="portfolio" id="portfolio">
+      <h2 style="margin:0 0 10px" id="portfolio">Selected Publications & Projects</h2>
+      <div class="portfolio">
         <div class="item"><strong>Research paper — AI-based energy monitoring</strong><div class="muted">Scopus journal · 2024</div></div>
         <div class="item"><strong>Patent — Smart sensor mount</strong><div class="muted">Filed · IN2025xxxx</div></div>
         <div class="item"><strong>Book chapter — IoT in Smart Cities</strong><div class="muted">Publisher · 2023</div></div>
@@ -159,11 +165,3 @@
   </div>
 </body>
 </html>
-<form action="https://formspree.io/f/xeoyrzdq" method="POST" class="contact-form">
-
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-
-    <button type="submit">Send Message</button>
-</form>
