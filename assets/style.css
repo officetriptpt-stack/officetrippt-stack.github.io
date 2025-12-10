@@ -30,9 +30,12 @@ body {
 
 /* LOGO */
 .logo-img {
-  height: 60px;
+  height: 42px;     /* ✅ perfect for header */
   width: auto;
+  max-height: 42px; /* ✅ prevents zoom */
   object-fit: contain;
+}
+
 }
 
 /* BRAND TEXT */
