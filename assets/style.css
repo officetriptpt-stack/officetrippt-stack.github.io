@@ -6,8 +6,13 @@
   object-fit: contain;
    box-shadow: 0 2px 6px rgba(15,23,42,0.06);
 }
-
 /* on very small screens shrink the logo a bit */
 @media (max-width:540px){
   .logo-img { height:44px; }
+}
+.logo-img {
+  height: 56px;   /* adjust bigger/smaller if you like */
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
