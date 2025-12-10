@@ -1,10 +1,10 @@
 .brand-dp {
-  height: 44px;         /* DP size */
-  width: 44px;
-  border-radius: 50%;   /* makes it circular like DP */
-  object-fit: contain; /* keeps logo intact */
+  height: 32px;       /* smaller size */
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
   background: #fff;
-  padding: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
